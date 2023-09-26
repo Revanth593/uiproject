@@ -1,0 +1,182 @@
+.sidebar-heading {
+  color: #013CC6!important
+}
+
+#invoice{
+  color: #0B63F8;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-color: #f8f8f8
+}
+
+
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+}
+
+
+  .dash > img{
+    height: 17px;
+  }
+
+  .notify > img{
+    height: 40px;
+    
+  }
+  
+  img{
+    height: 17px;
+  }
+
+#search{
+  background-image: url(./images/searchNormal.svg);
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 17px;
+  text-align: center;
+  width: 500px;
+  
+}
+  
+  
+  .header-text{
+    padding-left: 25px;
+    padding-top: 50px;
+    
+  }
+
+  #search{
+  margin-top: 25px;
+  margin-left: 25px;
+  }
+
+.icon{
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.sidebar-footer{
+ padding: 20px 30px;
+}
+
+.datas{
+  overflow-x: auto;
+}
+
+#checkbox{
+  visibility: hidden;
+}
+
+
+@media (max-width:780px){
+#checkbox{
+ position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 15px; 
+}
+.toggle{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 15px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #8000ff;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.toggle .top_line{
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+input:checked ~  .toggle .top_line{
+  left: 2px;
+  top: 14px;
+  width:25px;
+  transform: rotate(-45deg);
+}
+input:checked ~  .toggle .bottom_line{
+  left: 2px;
+  top: 14px;
+  width:25px;
+  transform: rotate(45deg);
+}
+input:checked ~  .toggle .middle_line{
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+#slide{
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  background-color: #fff;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+}
+
+input:checked ~ #slide{
+  transform: translateX(0);
+}
+
+
+#search{
+  width: 300px;
+  margin-left: 50px;
+
+}
+}
